@@ -10,7 +10,6 @@ interface NoteDetailProps {
 const Detail = () => {
   const [title, setTitle] = useState<string>("");
   const [description, setDescription] = useState<string>("");
-  const [error, setError] = useState<string>("");
   const [note, setNote] = useState<NoteDetailProps | null>(null)
   const navigate = useNavigate();
   const { id } = useParams();
